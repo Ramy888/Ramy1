@@ -48,7 +48,20 @@
         a:hover {
             text-decoration: underline; /* Underline on hover */
         }
-        .contact-info, .personal-details, .skills, .hobbies, .summary, .education, .experience, .published-projects, .linkedin, .certificates, . {
+        .container {
+            max-width: 800px; /* Set a maximum width */
+            margin: auto; /* Center the container */
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .photo {
+            width: 150px; /* Set photo width */
+            border-radius: 50%; /* Make photo circular */
+            margin-top: 20px; /* Add margin for spacing */
+        }
+        .section {
             background-color: #fff;
             padding: 15px;
             border-radius: 8px;
@@ -65,79 +78,82 @@
 </head>
 <body>
     <header>
+        <img src="https://drive.google.com/file/d/1luaOsBiht31J2ZfIiCDjspshgMfhYZVf/view?usp=sharing" alt="Ramy Magdy" class="photo">
         <h1>Ramy Magdy</h1>
         <p>534 Degla Palms, 6th October, Giza, Egypt.<br>
         (002) 01550507064<br>
         ramy.comm@gmail.com</p>
     </header>
 
-    <div class="contact-info">
-        <h2>Personal Details</h2>
-        <p>Gender: Male<br>
-        Material State: Married<br>
-        Date of Birth: 1/8/1987<br>
-        Military State: Completed<br>
-        Nationality: Egyptian</p>
-    </div>
+    <div class="container">
+        <div class="section contact-info">
+            <h2>Personal Details</h2>
+            <p>Gender: Male<br>
+            Marital Status: Married<br>
+            Date of Birth: 1/8/1987<br>
+            Military Status: Completed<br>
+            Nationality: Egyptian</p>
+        </div>
 
-    <div class="summary">
-        <h2>Summary</h2>
-        <ul>
-            <li>Proven track record as a Flutter Developer and Android Developer.</li>
-            <li>Proficient in PHP backend technologies.</li>
-            <li>Strong analytical skills.</li>
-            <li>Excellent communication and teamwork abilities.</li>
-        </ul>
-    </div>
+        <div class="section summary">
+            <h2>Summary</h2>
+            <ul>
+                <li>Proven track record as a Flutter Developer and Android Developer.</li>
+                <li>Proficient in PHP backend technologies.</li>
+                <li>Strong analytical skills.</li>
+                <li>Excellent communication and teamwork abilities.</li>
+            </ul>
+        </div>
 
-    <div class="education">
-        <h2>Education</h2>
-        <p>Bachelor in Electrical Communications and Electronics, Faculty of Engineering, Helwan University, Cairo, Egypt, Graduated 2010.</p>
-    </div>
+        <div class="section education">
+            <h2>Education</h2>
+            <p>Bachelor in Electrical Communications and Electronics, Faculty of Engineering, Helwan University, Cairo, Egypt, Graduated 2010.</p>
+        </div>
 
-    <div class="experience">
-        <h2>Experience</h2>
-        <h3>Flutter Developer at Telecom Egypt</h3>
-        <p>8/2017 – Current</p>
-        <ul>
-            <li>Independently develop Android and iOS applications.</li>
-            <li>Develop automation scripts using Python.</li>
-            <li>Achieve an average user rating of 4.5 stars.</li>
-        </ul>
-    </div>
+        <div class="section experience">
+            <h2>Experience</h2>
+            <h3>Flutter Developer at Telecom Egypt</h3>
+            <p>8/2017 – Current</p>
+            <ul>
+                <li>Independently develop Android and iOS applications.</li>
+                <li>Develop automation scripts using Python.</li>
+                <li>Achieve an average user rating of 4.5 stars.</li>
+            </ul>
+        </div>
 
-    <div class="published-projects">
-        <h2>Published Projects</h2>
-        <ul>
-            <li><a href="https://play.google.com/store/apps/details?id=com.Pyramids.Pyramids.projectpyramids">Pyramids Development</a></li>
-            <li><a href="https://play.google.com/store/apps/details?id=com.rdb.opelheroesegypt">GroupOpel Heroes Egypt</a></li>
-            <li><a href="https://play.google.com/store/apps/details?id=com.rdb.drmdailyreportingmanager">Daily Reporting Manager DRM</a></li>
-            <li><a href="https://play.google.com/store/apps/details?id=com.rdb.ecommerce">Ecommerce App</a></li>
-            <li><a href="https://play.google.com/store/apps/details?id=com.rdb.ramadan2023">Ramadan 2023</a></li>
-        </ul>
-    </div>
+        <div class="section published-projects">
+            <h2>Published Projects</h2>
+            <ul>
+                <li><a href="https://play.google.com/store/apps/details?id=com.Pyramids.Pyramids.projectpyramids">Pyramids Development</a></li>
+                <li><a href="https://play.google.com/store/apps/details?id=com.rdb.opelheroesegypt">GroupOpel Heroes Egypt</a></li>
+                <li><a href="https://play.google.com/store/apps/details?id=com.rdb.drmdailyreportingmanager">Daily Reporting Manager DRM</a></li>
+                <li><a href="https://play.google.com/store/apps/details?id=com.rdb.ecommerce">Ecommerce App</a></li>
+                <li><a href="https://play.google.com/store/apps/details?id=com.rdb.ramadan2023">Ramadan 2023</a></li>
+            </ul>
+        </div>
 
-    <div class="skills">
-        <h2>Skills</h2>
-        <p>Your skills go here.</p>
-    </div>
+        <div class="section skills">
+            <h2>Skills</h2>
+            <p>Your skills go here.</p>
+        </div>
 
-    <div class="hobbies">
-        <h2>Hobbies</h2>
-        <ul>
-            <li>Football</li>
-            <li>Listen to Music</li>
-        </ul>
-    </div>
+        <div class="section hobbies">
+            <h2>Hobbies</h2>
+            <ul>
+                <li>Football</li>
+                <li>Listening to Music</li>
+            </ul>
+        </div>
 
-    <div class="linkedin">
-        <h2>LinkedIn</h2>
-        <p><a href="http://eg.linkedin.com/in/ramymagdy1">http://eg.linkedin.com/in/ramymagdy1</a></p>
-    </div>
+        <div class="section linkedin">
+            <h2>LinkedIn</h2>
+            <p><a href="http://eg.linkedin.com/in/ramymagdy1">http://eg.linkedin.com/in/ramymagdy1</a></p>
+        </div>
 
-    <div class="certificates">
-        <h2>Certificates</h2>
-        <p><a href="https://drive.google.com/open?id=19ezFHeFA4AkXl3vM_FNaIXzxnJgiHP1e">Android Developer Certificate</a></p>
+        <div class="section certificates">
+            <h2>Certificates</h2>
+            <p><a href="https://drive.google.com/open?id=19ezFHeFA4AkXl3vM_FNaIXzxnJgiHP1e">Android Developer Certificate</a></p>
+        </div>
     </div>
 
     <footer>
