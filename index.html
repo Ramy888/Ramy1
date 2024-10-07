@@ -57,10 +57,16 @@
             box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         }
         .photo {
-            width: 150px; /* Set desired width */
+/*             width: 150px; /* Set desired width */
             height: 150px; /* Set desired height to make it square */
             border-radius: 15px; /* Adjust the radius for rounded corners */
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Optional: Add shadow for depth */
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Optional: Add shadow for depth */ */
+            
+            display: inline-block;
+            background-color: #f0f0f0; /* Adjust the background color */
+            padding: 10px; /* Add padding around the image */
+            border-radius: 20px; /* Adjust to make the container rounded */
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3); /* Optional shadow for depth */
         }
         .section {
             background-color: #fff;
@@ -79,7 +85,10 @@
 </head>
 <body>
     <header>
-        <img src="https://ramy888.github.io/Ramy1/photo.jpg" alt="Ramy Magdy" class="photo">
+        <div class="image-container">
+            <img src="https://ramy888.github.io/Ramy1/photo.jpg" alt="Ramy Magdy" class="photo">
+        </div>
+
         <h1>Ramy Magdy</h1>
         <p>534 Degla Palms, 6th October, Giza, Egypt.<br>
         (002) 01550507064<br>
